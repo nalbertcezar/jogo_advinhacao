@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+	var numeroPensado = Math.round(Math.random()*10);
+	var chance = 3;
+	while(chance >= 1){
+		var chute = parseInt(prompt("Dê o seu chute!"));		
+		if(chute == numeroPensado){
+			alert("Você acertou! O número pensado foi " + numeroPensado + "!");
+			break;
+		}else{
+			chance = chance -1;
+			if(chance <= 0){
+				alert("Que pena, você esgotou seu número de tentativas.");				
+			}else{				
+				alert("Você errou! O número pensado foi: " + numeroPensado + "! Você tem mais " + chance + " chance(s).");	
+			}
+		}
+	}	
+</script>
